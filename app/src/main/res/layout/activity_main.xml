@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="384dp"
@@ -16,8 +28,8 @@
         android:layout_marginEnd="220dp"
         android:layout_marginBottom="653dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Live Your Life"
-        android:textColor="#686866"
+        android:text="@string/live_your_life"
+        android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,11 +46,15 @@
         android:layout_marginTop="679dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="By, Clint."
+        android:shadowColor="#E91E63"
+        android:shadowDx="@android:dimen/app_icon_size"
+        android:shadowDy="@android:dimen/app_icon_size"
+        android:shadowRadius="@android:dimen/app_icon_size"
+        android:text="@string/by_clint"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#686866"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,4 +62,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
